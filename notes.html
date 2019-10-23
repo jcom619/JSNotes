@@ -1,0 +1,271 @@
+        <!DOCTYPE html>
+        <html lang="en" dir="ltr">
+          <head>
+            <title>
+              JS Notes
+            </title>
+            <!-- title icon -->
+            <link rel="shortcut icon" type="image/x-icon" href="image/note.ico" />
+            <meta charset="utf-8">
+            <!-- Bootstrap -->
+            <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous">
+            <!-- More Bootstrap -->
+            <link
+              rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+              crossorigin="anonymous">
+              <!-- JQuery -->
+            <script
+              src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            </script>
+            <!-- CSS -->
+            <style media="screen">
+              body {
+                background-color: rgba(0, 50, 90, 0.6);
+                background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+              }
+              h2, h3, h4 {
+                font-family: Copperplate;
+                text-shadow: 0px 0px 5px black;
+                color: rgba(250, 250, 250, 0.725);
+              }
+
+              h4 {
+                font-size: 16px;
+              }
+
+              h5{
+                font-family: Copperplate;
+                font-size: 25px;
+                font-style: oblique;
+              }
+              .navbar {
+                box-shadow: 0px 0px 50px 10px black;
+              }
+              .thumbnail {
+                box-shadow: 0px 0px 50px 1px black;
+                margin-top: 30px;
+                margin-bottom: 60PX;
+              }
+              #intro {
+                text-align: center;
+                margin-left: 0px;
+                margin-top: 80px;
+                margin-right: 0px;
+                margin-bottom: 50px;
+                border: 1px solid black;
+                padding: 25px;
+                background: rgba(255, 255, 255, 0.3);
+                box-shadow: 0px 0px 50px 10px black;
+              }
+              ul {
+                list-style-type: none;
+              }
+            </style>
+          </head>
+          <body>
+            <!-- DOCUMENTATION NAVBAR -->
+          	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!-- This is the actual code that create the "hamburger icon" -->
+                <!-- The data-target grabs ids to put into the icon -->
+                <div class="navbar-header">
+                  <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <!--  Code for the hamburger icon-->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="">HiMundo!</a>
+                </div>
+                <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <!-- w3s -->
+
+                    <li class="dropdown">
+                      <a
+                        href="#"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        JUMP TO
+                        <span class="caret">
+                        </span>
+                      </a>
+
+
+<!-- DROP DOWN MENU -->
+                      <ul class="dropdown-menu">
+                        <li><a href="#colorFlasher">color flasher</a></li>
+                        <li><a href="#conversion">unit conversion</a></li>
+                        <li><a href="#while_loops">whle loops</a></li>
+                        <li><a href="#for_loops">for loops</a></li>
+                        <li><a href="#functions">functions</a></li>
+                        <li><a href="#arrays">arrays</a></li>
+                        <li><a href="#objects">objects</a></li>
+                        <li><a href="#domMethods">DOM methods</a></li>
+                        <li><a href="#eventListeners">event listeners</a></li>
+                        <li><a href="#exercize1">loop exercize</a></li>
+                        <li><a href="#exercize2">function exercize</a></li>
+                        <li><a href="#exercize3">array exercize</a></li>
+                        <li><a href="#exercize4">object exercize</a></li>
+
+
+
+
+                        <!-- Use this to separate a new link -->
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">top</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <!-- Stuff on the Right -->
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a target="_blank" href="https://github.com/">github <span class="sr-only">(current)</span></a></li>
+                      <li><a target="_blank" href="https://www.w3schools.com/">w3s</a></li>
+                      <li><a target="_blank" href="https://stackoverflow.com/">StackOverflow</a></li>
+                      <li><a target="_blank" href="https://developer.mozilla.org/">MDN</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            <!-- INSTRUCTION AND TABLE OF CONTENT -->
+            <div id="intro">
+              <h2>Un-Comment code sections in SCRIPT.JS file OR copy paste to TEST.JS</h2>
+              <h3>use console to test sample code</h3>
+              <h4>{ script.js and test.js files are already linked to index.html }</h4><br>
+              <h5>Table Of Contents:</h5>
+              <br>
+
+
+<!-- TABLE OF CONTENT -->
+              <div>
+                <p>COLOR FLASHER</p>
+                <p>CONVERSION TOOL</p>
+                <p>WHILE LOOPS</p>
+                <p>FOR LOOPS</p>
+                <p>FUNCTIONS</p>
+                <p>ARRAYS</p>
+                <p>OBJECTS</p>
+                <p>DOM METHODS</p>
+                <p>EVENT LISTENERS</p>
+                <p>LOOP EXERCIZE</p>
+                <p>FUNCTION EXERCIZE</p>
+                <p>ARRAY EXERCIZE</p>
+                <p>OBJECT EXERCIZE</p>
+              </div><br>
+            </div>
+
+
+<!-- IMAGES -->
+            <div class="center">
+              <div id="colorFlasher">
+                <div class="thumbnail container">
+                  <img src="image/colorFlasher.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="conversion">
+                <div class="thumbnail container">
+                  <img src="image/conversion.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="while_loops">
+                <div class="thumbnail container">
+                  <img src="image/while_loops.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="for_loops">
+                <div class="thumbnail container">
+                  <img src="image/for_loops.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="functions">
+                <div class="thumbnail container">
+                  <img src="image/functions1.png" alt="" width="100%">
+                  <img src="image/functions2.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="arrays">
+                <div class="thumbnail container">
+                  <img src="image/arrays1.png" alt="" width="100%">
+                  <img src="image/arrays2.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="objects">
+                <div class="thumbnail container">
+                  <img src="image/objects1.png" alt="" width="100%">
+                  <img src="image/objects2.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="domMethods">
+                <div class="thumbnail container">
+                  <img src="image/domMethods.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="eventListeners">
+                <div class="thumbnail container">
+                  <img src="image/eventListeners.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="exercize1">
+                <div class="thumbnail container">
+                  <img src="image/js1project.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="exercize2">
+                <div class="thumbnail container">
+                  <img src="image/exercize2.png" alt="" width="100%">
+                  <img src="image/exercize2_2.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="exercize3">
+                <div class="thumbnail container">
+                  <img src="image/exercize3.png" alt="" width="100%">
+                </div>
+              </div>
+              <div id="exercize4">
+                <div class="thumbnail container">
+                  <img src="image/exercize4.png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+
+
+            <div id="bottom"></div>
+            <!-- script imports -->
+            <script type="text/javascript"> // in-file scripts
+
+              var newText = document.querySelector("h2")
+                // TO CHANGE COLOR OF TEXT
+                newText.style.color = "lightblue";
+                // to change the text itself
+                // newText.textContent = "( BOTH .JS FILES ARE LINKED TO NOTES.HTML )"
+                // to add a strong tag inside h4
+                // newText.innerHTML = "<strong>( BOTH .JS FILES ARE LINKED TO NOTES.HTML )</strong>"
+
+            </script>
+            <script src="script.js">
+            </script>
+            <!-- <script src="test.js">
+            </script> -->
+            <script
+              src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+              integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+              crossorigin="anonymous">
+            </script>
+          </body>
+        </html>
