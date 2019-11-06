@@ -1,14 +1,14 @@
 
-
-
-
-
-
-
-//                               // COLOR FLASHER
 //
+//
+//
+//
+//
+//
+// //                               // COLOR FLASHER
+// //
 // // Grab the Header with h1
-// var header = document.querySelector("h2")
+// var header = document.querySelector("h1")
 //
 // // Interface with the style.
 // header.style.color = 'red'

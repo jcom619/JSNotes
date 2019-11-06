@@ -27,8 +27,14 @@
             <style media="screen">
               body {
                 background-attachment: fixed;
-                background-color: rgba(0, 50, 90, 0.6);
-                background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+                /* background-color: rgba(0, 50, 90, 0.6);
+                background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
+                background: rgb(58,180,152);
+                background: radial-gradient(circle,
+                            rgba(58,180,152,1) 0%,
+                            rgba(39,92,89,1) 74%,
+                            rgba(16,50,40,1) 100%
+                            );
               }
               h2, h3, h4 {
                 font-family: Copperplate;
@@ -58,8 +64,9 @@
                 box-shadow: 0px 0px 50px 1px black;
                 margin-top: 30px;
                 margin-bottom: 60PX;
+                background-color: rgba(255, 255, 255, 0.05);
               }
-              @media screen and (max-width: 900px) {
+              @media screen and (max-width: 500px) {
                 .thumbnail {
                   width: 100%;
                 }
@@ -161,7 +168,7 @@
             <!-- INSTRUCTION AND TABLE OF CONTENT -->
             <div id="intro">
               <h1>javaScript</h1>
-
+            </div>
 
 <!-- TABLE OF CONTENT -->
 
@@ -245,9 +252,9 @@
             <!-- script imports -->
             <script type="text/javascript"> // in-file scripts
 
-              var newText = document.querySelector("h2")
+              var newText = document.querySelector("h1")
                 // TO CHANGE COLOR OF TEXT
-                newText.style.color = "lightblue";
+                // newText.style.color = "lightblue";
                 // to change the text itself
                 // newText.textContent = "( BOTH .JS FILES ARE LINKED TO NOTES.HTML )"
                 // to add a strong tag inside h4
